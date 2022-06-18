@@ -32,7 +32,7 @@
             </label>
 
             <label for="cost">
-                <input type="text" name='cost' value="{{ old('cost', $task->cost) }}" placeholder="your cost">
+                <input class='mask-money' type="text" name='cost' value="{{ old('cost', $task->cost) }}" placeholder="your cost">
                 @error('cost') {{ $message }} @enderror
             </label>
 
